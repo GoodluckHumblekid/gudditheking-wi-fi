@@ -75,17 +75,26 @@ span {
     background-color: #09a00433;
     color: rgb(4, 167, 4);
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width: 768px) {
-    /* packages */
     .steps {
         display: grid;
         width: auto;
     }
+    
     body {
         display: grid;
-        margin: 20px;
-        
     }
     h3,
     h2,
@@ -94,7 +103,15 @@ span {
     }
     .steps {
         justify-content: center;
+
     }
+    .input {
+        display: grid;
+    }
+    .details {
+        display: grid;
+    }
+
 }
 
 
