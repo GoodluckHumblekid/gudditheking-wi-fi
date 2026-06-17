@@ -78,7 +78,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
 }
 i {
     font-size: 30px;
@@ -103,13 +103,21 @@ i {
     }
     .steps {
         justify-content: center;
-
+        display: grid;
+    }
+    .first {
+        display: grid;
+        justify-content: center;
     }
     .input {
         display: grid;
     }
     .details {
         display: grid;
+    }
+    .wait {
+        display: grid;
+        justify-content: center;
     }
 
 }
