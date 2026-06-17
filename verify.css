@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+body {
+    background-color: #1e3c65;
+    color: aliceblue;
+    padding: 10px;
+}
+nav {
+    background-color: #ff001e;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10%;
+    text-align: center;
+    border-radius: 10px;
+}
+main {
+    margin-top: 10px;
+}
+.after {
+    background-color: #ff001e5d;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.access,
+.wait,
+button,
+input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background-color: #ff001e;
+}
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+button:hover {
+    background-color: orange;
+}
+button:focus {
+    opacity: 0.4;
+}
+.wait {
+    background-color: rgb(129, 204, 204);
+    margin-top: 10px;
+    color: black;
+}
+.first {
+    margin-top: 12px;
+}
+span {
+    color: orangered;
+}
+.how {
+    background-color: #5a5c5f;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+.access {
+    background-color: #09a00433;
+    color: rgb(4, 167, 4);
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    /* packages */
+    .steps {
+        display: grid;
+        width: auto;
+    }
+    body {
+        display: grid;
+        margin: 20px;
+        
+    }
+    h3,
+    h2,
+    p {
+        text-align: center;
+    }
+    .steps {
+        justify-content: center;
+    }
+}
+
+
+
+/* Loader */
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:#02022b;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    transition:opacity 1s ease, visibility 1s ease;
+}
+
+.spinner{
+    width:80px;
+    height:80px;
+    border:6px solid rgba(255,255,255,0.2);
+    border-top:6px solid #ff3d2e;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+#loader h2{
+    margin-top:20px;
+    color:#ff3d2e;
+}
+
+#loader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
